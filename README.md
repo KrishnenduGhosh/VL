@@ -9,7 +9,7 @@ This project presents a video lecture augmentation system by linking its off-top
 5. Video Segment Re-ranking: These initially retrieved video segments are further re-ranked so that the top-ranked video segment offers the most basic understanding of the target off-topic concept.
 
 # Data:
-Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively)
+Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively) collected from https://nptel.ac.in/course.html.
 ## CSE Data (Serial, Course Name and Course Id)
 1. Advanced Graph Theory AGT
 2. Artificial Intelligence AI
