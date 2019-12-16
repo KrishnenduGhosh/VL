@@ -24,12 +24,11 @@ D. Annotates the extracted concepts. These data are present in the 5_Annotated_1
 Identifies the off-topics. These data are present in the 5_Off folder in JSON format. It also evaluates the concerned module.
 ## 6. Retrieval of Relevant Video Segments:
 A. Retrieves relevant video lecture segments for each of the off-topics. These data are present in the 6_Retrieved folder in JSON format.
-B. Annotates the extracted concepts. These data are present in the 5_Annotated_1 folder in JSON format.
-## 7. Retrived > reranking() > Reranked (Reranks the segments)
+B. Annotates the retrieved segments. These data are present in the 8_Annotated_2 folder.
+## 7. Reranking:
 Reranks the retrieved video lecture segments. These data are present in the 7_Reranked folder in JSON format.
 ## 8. Evaluation:
-Evaluates the extracted concepts. These data are present in the 5_Annotated_1 folder in JSON format.
-
+Evaluates the extracted concepts.
 
 # Run:
 Run main.py which offers a menu-based control to execute each of the modules.
