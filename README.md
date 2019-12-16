@@ -17,13 +17,17 @@ Converts transcripts PDFs into TXT format and pre-processes by removing spurious
 Segments the transcripts into topical segments. These data are present in the 3_Segment folder in TXT format.
 ## 4. Concept Extraction:
 A. Extracts topics for each video lecture segments. These data are present in the 4_Topic folder in JSON format.
+
 B. Extracts the linked Wikipedia articles for the extracted topics. These data are present in the 4_Topic_pkl folder in JSON format.
+
 C. Extracts the linked Wikipedia articles for the articles present in 4_Topic_pkl folder. These data are present in the 4_Out_pkl folder in JSON format.
+
 D. Annotates the extracted concepts. These data are present in the 5_Annotated_1 folder in JSON format.
 ## 5. Off-topic Identification:
 Identifies the off-topics. These data are present in the 5_Off folder in JSON format. It also evaluates the concerned module.
 ## 6. Retrieval of Relevant Video Segments:
 A. Retrieves relevant video lecture segments for each of the off-topics. These data are present in the 6_Retrieved folder in JSON format.
+
 B. Annotates the retrieved segments. These data are present in the 8_Annotated_2 folder.
 ## 7. Reranking:
 Reranks the retrieved video lecture segments. These data are present in the 7_Reranked folder in JSON format.
