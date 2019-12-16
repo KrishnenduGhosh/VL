@@ -10,8 +10,7 @@ This project presents a video lecture augmentation system by linking its off-top
 
 # Data:
 Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively)
-
-# CSE Data
+## CSE Data (Serial, Course Name and Course Id)
 1. Advanced Graph Theory AGT
 2. Artificial Intelligence AI
 3. Biometrics	BIO
@@ -51,7 +50,7 @@ Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Co
 37. Machine Learning	ML
 38. Modern Algebra	MAL
 39. Operating Systems	OS
-# Mathematics Data
+## Mathematics Data (Serial, Course Name and Course Id)
 40. Mathematics I	MA1
 41. Mathematics II	MA2
 42. Mathematics III	MA3
@@ -92,7 +91,7 @@ Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Co
 7. Retrived > reranking() > Reranked (Reranks the segments)
 8. Collect GS 
 
-Folders:
+# Folders:
 1. Collect Data (Collected 68 Courses; 2581 Lectures in PDF format)
 2. Data > preprocess() > Text (Converts PDFs to TXTs)
 3. Text > segment() > Segment (Segments TXTs into topical segments)
@@ -102,7 +101,7 @@ Folders:
 7. Retrived > reranking() > Reranked (Reranks the segments)
 8. Collect GS 
 
-Codes:
+# Codes:
 1. main.py (Segments TXTs into topical segments)
 2. preprocess.py (Segments TXTs into topical segments)
 3. segment.py (Segments TXTs into topical segments)
@@ -112,3 +111,8 @@ Codes:
 6. retrieval.py (Retrieves segments for each of the off-topics)
 7. reranking.py (Reranks the segments)
 8. eval.py (Segments TXTs into topical segments)
+
+# Cite
+
+# Contacts
+In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
