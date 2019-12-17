@@ -1,5 +1,8 @@
 # Data:
 2581 Lectures in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively)
+
+Google Drive Link: https://drive.google.com/drive/folders/1KTWhbPk-N8_rz-p-wSIMo9nKKYWU7PU9?usp=sharing
+
 ## CSE Data (Course Name and Course Id)
 1. Advanced Graph Theory AGT
 2. Artificial Intelligence AI
