@@ -24,7 +24,7 @@ C. Outlinks for the extracted Wikipedia articles are extracted to generate the c
 
 D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '5_Annotated' folder in JSON format. Download '5_Annotated' folder from https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3 .
 ## 5. Off-topic Identification:
-The off-topics are identified automatically. The code '4_off_predict.py' identifies the off-topics and also evaluates the concerned modules.
+The off-topics are identified automatically. The code '4_off_predict.py' identifies the off-topics, stores them in '5_off' folder and also evaluates the concerned modules.
 ## 6. Retrieval of Relevant Video Segments:
 Video lecture segments relevant to each of the off-topics are retrieved. The code '6_retrieval.py' retrieves the segments and stores in '6_Retrieved' folder.
 ## 7. Reranking:
