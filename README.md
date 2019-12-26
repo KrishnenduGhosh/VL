@@ -10,34 +10,27 @@ This project presents a video lecture augmentation system by linking its off-top
 
 # Steps:
 ## 1. Data collection:
-Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively) collected from https://nptel.ac.in/course.html. These data are present in the 1_Data folder in PDF format.
+Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively) collected from https://nptel.ac.in/course.html. These data are collected and stored in 1_Data folder in PDF format.
 ## 2. Preprocessing:
-Converts transcripts PDFs into TXT format and pre-processes by removing spurious data (course metadata). These data are present in the 2_Text folder in TXT format.
+Transcripts (PDFs) are converted into TXT format and pre-processed by removing spurious data (course metadata). The code '1_preprocess.py' converts and preprocesses the data from folder '1_Data' and stores in '2_Text' folder.
 ## 3. Segmentation:
-Segments the transcripts into topical segments. These data are present in the 3_Segment folder in TXT format.
+The transcript data are segmented into topical segments. The code '2_segment.py' segments transcripts from '2_Text' folder and stores in '3_Segment' folder.
 ## 4. Concept Extraction:
-A. Extracts topics for each video lecture segments. These data are present in the 4_Topic folder in JSON format.
-
-B. Extracts the linked Wikipedia articles for the extracted topics. These data are present in the 4_Topic_pkl folder in JSON format.
-
-C. Extracts the linked Wikipedia articles for the articles present in 4_Topic_pkl folder. These data are present in the 4_Out_pkl folder in JSON format.
-
-D. Annotates the extracted concepts. These data are present in the 5_Annotated_1 folder in JSON format.
+A. Topics are extracted for each video lecture segments. The code '3_tag.py' extracts the topics and stores in '4_Topic' folder in JSON format.
+B. Wikipedia articles are extarcted for the extracted topics. The code '3_topic_out.py' extracts the articles and stores in '4_Topic_pkl' folder in Pickle format.
+C. Outlinks for the extracted Wikipedia articles are extracted to generate the concept-graph. The code '3_off_out.py' extracts the backlinks and stores in '4_Out_pkl' folder in Pickle format.
+D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '5_Annotated' folder in JSON format.
 ## 5. Off-topic Identification:
-Identifies the off-topics. These data are present in the 5_Off folder in JSON format. It also evaluates the concerned module.
+The off-topics are identified automatically. The code '4_off_predict.py' identifies the off-topics and also evaluates the concerned modules.
 ## 6. Retrieval of Relevant Video Segments:
-A. Retrieves relevant video lecture segments for each of the off-topics. These data are present in the 6_Retrieved folder in JSON format.
-
-B. Annotates the retrieved segments. These data are present in the 8_Annotated_2 folder.
+Video lecture segments relevant to each of the off-topics are retrieved. The code '6_retrieval.py' retrieves the segments and stores in '6_Retrieved' folder.
 ## 7. Reranking:
-Reranks the retrieved video lecture segments. These data are present in the 7_Reranked folder in JSON format.
+The retrieved video lecture segments are reranked using code '7_rerank.py'. The reranked segments are stored in '7_Reranked' folder.
 ## 8. Evaluation:
-Evaluates the extracted concepts.
-
+A. The retrieved and reranked segmnets are shown to the annotators and their relevance are tagged. The gold standard is present in 'GS.txt' file.
+B. The retrieved and reranked segments are converted to the files 'RT.txt' and 'RR.txt' respectvely. This conversion made so that TREC provided evaluation module can operate on them and determine the performance measures. The code '8_eval.py' converts the segments and stores in '8_Result' folder.
 # Run:
-Run main.py which offers a menu-based control to execute each of the modules.
-
-# Cite
+Run main.py which offers a menu-based control to execute each of the above-mentioned modules.
 
 # Contacts
 In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
