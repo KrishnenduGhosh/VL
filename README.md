@@ -45,15 +45,15 @@ Finally, run 'main.py' which offers a menu-based control to execute each of the 
 # Cite
 If this work is helpful for your research, please cite our papers.
 
-@inproceedings{nangi2019offvid,
-  title={OffVid: A System for Linking Off-Topic Concepts to Topically Relevant Video Lecture Segments},
-  author={Nangi, Sharmila Reddy and Kanchugantla, Yashasvi and Rayapati, Pavan Gopal and Bhowmik, Plaban Kumar},
-  booktitle={2019 IEEE 19th International Conference on Advanced Learning Technologies (ICALT)},
-  volume={2161},
-  pages={37--41},
-  year={2019},
-  organization={IEEE}
-}
-
+    @inproceedings{nangi2019offvid,
+    title={OffVid: A System for Linking Off-Topic Concepts to Topically Relevant Video Lecture Segments},
+    author={Nangi, Sharmila Reddy and Kanchugantla, Yashasvi and Rayapati, Pavan Gopal and Bhowmik, Plaban Kumar},
+    booktitle={2019 IEEE 19th International Conference on Advanced Learning Technologies (ICALT)},
+    volume={2161},
+    pages={37--41},
+    year={2019},
+    organization={IEEE}
+    }
+        
 # Contacts
 In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
