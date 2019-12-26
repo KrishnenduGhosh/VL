@@ -42,5 +42,23 @@ B. Geckodriver is also required. Download this from https://drive.google.com/ope
 ## Execute:
 Finally, run 'main.py' which offers a menu-based control to execute each of the above-mentioned modules.
 
+# Cite
+If this work is helpful for your research, please cite our papers.
+
+@inproceedings{Nangi:2019,
+  author={S. R. {Nangi} and Y. {Kanchugantla} and P. G. {Rayapati} and P. K. {Bhowmik}},
+  booktitle={Proceedings of the 19th International Conference on Advanced Learning Technologies (ICALT' 19)},
+  title={OffVid: A System for Linking Off-Topic Concepts to Topically Relevant Video Lecture Segments},
+  year={2019},
+  volume={2161-377X},
+  number={},
+  pages={37-41},
+  keywords={video lecture;video linking;MOOCs;concept similarity},
+  doi={10.1109/ICALT.2019.00015},
+  ISSN={},
+  month={July},
+  organization={IEEE}
+}
+
 # Contacts
 In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
