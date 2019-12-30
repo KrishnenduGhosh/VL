@@ -28,7 +28,11 @@ The off-topics are identified automatically. The code '4_off_predict.py' identif
 ## 6. Retrieval of Relevant Video Segments:
 Video lecture segments relevant to each of the off-topics are retrieved. The code '6_retrieval.py' retrieves the segments and stores in '6_Retrieved' folder in JSON format and as 'RT.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format. The '8_Result' folder is downloadable from https://drive.google.com/open?id=17-IxebyTtNsSXY98FfkTJWHK9goHhkOT which contains the folder 'trec-eval', providing the performance evaluation codes.
 ## 7. Reranking:
-The retrieved video lecture segments are reranked using code '7_rerank.py'. The reranked segments are stored in '7_Reranked' folder in JSON format and as 'RR.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format.
+A. Code '7_feature.py' extracts the features and stores them in 'rerank.txt' file under '7_Reranked' folder.
+
+B. The extracted features are combined with the the labels (relevant or not) from 'GS.txt' by code '7_L2R.py'. It further detemines the weights for the features.
+
+C. The retrieved video lecture segments are reranked using code '7_rerank.py' where the learned weights are used. The reranked segments are stored in '7_Reranked' folder in JSON format and as 'RR.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format.
 ## 8. Evaluation:
 A. The retrieved and reranked segmnets are shown to the annotators and their relevance are tagged. The gold standard is present in 'GS.txt' file. The file can be downloaded from https://drive.google.com/open?id=1sKfmBveCkUtaL_5cJqKG0li_z-c0wns4 .
 
