@@ -30,7 +30,7 @@ Video lecture segments relevant to each of the off-topics are retrieved. The cod
 ## 7. Reranking:
 A. Code '7_feature.py' extracts the features and stores them in 'rerank.txt' file under '7_Reranked' folder.
 
-B. The extracted features are combined with the the labels (relevant or not) from 'GS.txt' by code '7_L2R.py'. It further detemines the weights for the features.
+B. The extracted features are combined with the the labels (relevant or not) from 'GS.txt' by code '7_L2R.py' and stores in 'L2R.txt'. Running linear regression models, the code '7_L2R.py' further detemines the weights for the features.
 
 C. The retrieved video lecture segments are reranked using code '7_rerank.py' where the learned weights are used. The reranked segments are stored in '7_Reranked' folder in JSON format and as 'RR.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format.
 ## 8. Evaluation:
