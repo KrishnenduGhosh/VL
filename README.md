@@ -49,7 +49,7 @@ Finally, run 'main.py' which offers a menu-based control to execute each of the 
 # Contacts
 In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
 
-#Cite
+# Cite
 @article{goyal2017graph,
     title = "Augmenting Video Lectures: Identifying Off-topic Concepts and Linking to Relevant Video Lecture Segments",
     journal = "International Journal of Artificial Intelligence in Education",
