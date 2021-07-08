@@ -48,3 +48,14 @@ Finally, run 'main.py' which offers a menu-based control to execute each of the 
 
 # Contacts
 In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
+
+#Cite
+@article{goyal2017graph,
+    title = "Augmenting Video Lectures: Identifying Off-topic Concepts and Linking to Relevant Video Lecture Segments",
+    journal = "International Journal of Artificial Intelligence in Education",
+    year = "2021",
+    doi = "https://doi.org/10.1007/s40593-021-00257-z",
+    url = "https://link.springer.com/article/10.1007/s40593-021-00257-z",
+    author = "Krishnendu Ghosh, Sharmila Reddy Nangi, Yashasvi Kanchugantla, Pavan Gopal Rayapati, Plaban Kumar Bhowmick and Pawan Goyal ",
+    keywords = "Video lecture augmentation, Off-topic concept identification, MOOCs, Concept similarity, Community detection, Retrieval and re-ranking"
+}
