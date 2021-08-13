@@ -51,7 +51,7 @@ Finally, run 'main.py' which offers a menu-based control to execute each of the 
 In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
 
 # Cite
-Please cite our work on Augmenting Video Lectures:
+If this work is helpful for your research, please cite our paper 'Augmenting Video Lectures: Identifying Off-topic Concepts and Linking to Relevant Video Lecture Segments' available at https://link.springer.com/article/10.1007/s40593-021-00257-z.
 
     @article{ghosh2021augmenting,
         title = "Augmenting Video Lectures: Identifying Off-topic Concepts and Linking to Relevant Video Lecture Segments",
@@ -63,7 +63,7 @@ Please cite our work on Augmenting Video Lectures:
         keywords = "Video lecture augmentation, Off-topic concept identification, MOOCs, Concept similarity, Community detection, Retrieval and re-ranking"
     }
 
-Please cite our work on Retrieving Questions:
+The module on retrieving questions is discussed in details in our paper 'Using Re-Ranking to Boost Deep Learning Based Community Question Retrieval' available at https://dl.acm.org/doi/pdf/10.1145/3106426.3106442.
 
     @inproceedings{ghosh2017using,
     author = {Ghosh, Krishnendu and Bhowmick, Plaban Kumar and Goyal, Pawan},
