@@ -51,7 +51,7 @@ Finally, run 'main.py' which offers a menu-based control to execute each of the 
 In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
 
 # Cite
-Please cite our work on Augmenting video lectures:
+Please cite our work on Augmenting Video Lectures:
 
     @article{ghosh2021augmenting,
         title = "Augmenting Video Lectures: Identifying Off-topic Concepts and Linking to Relevant Video Lecture Segments",
@@ -63,7 +63,7 @@ Please cite our work on Augmenting video lectures:
         keywords = "Video lecture augmentation, Off-topic concept identification, MOOCs, Concept similarity, Community detection, Retrieval and re-ranking"
     }
 
-Please cite our work on retrieving questions:
+Please cite our work on Retrieving Questions:
 
     @inproceedings{ghosh2017using,
     author = {Ghosh, Krishnendu and Bhowmick, Plaban Kumar and Goyal, Pawan},
