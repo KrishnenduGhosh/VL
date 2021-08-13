@@ -1,4 +1,4 @@
-# Video Augmentation for Video Lectures
+# Augmentation for Video Lectures
 
 # Introduction:
 This project presents a video lecture augmentation system by linking its off-topic concepts with topically relevant lecture segments. Such lecture segments are retrieved to furnish basic understanding of the associated off-topic concepts. The proposed augmentation model comprises five modules: video lecture segmentation, concept extraction, off-topic identification, retrieval of relevant video segments and video segment re-ranking.
