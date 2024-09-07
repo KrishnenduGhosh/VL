@@ -10,7 +10,7 @@ This project presents a video lecture augmentation system by linking its off-top
 
 # Steps:
 ## 1. Data collection:
-Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively) collected from https://nptel.ac.in/course.html. These data are collected and stored in 1_Data folder in PDF format. Further details of the data is provided in 'Data.md' file. You can download the data from https://drive.google.com/open?id=1KTWhbPk-N8_rz-p-wSIMo9nKKYWU7PU9
+Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively) collected from https://nptel.ac.in/course.html. These data are collected and stored in 1_Data folder in PDF format. Further details of the data is provided in 'Data.md' file. You can download the data from [https://drive.google.com/open?id=1KTWhbPk-N8_rz-p-wSIMo9nKKYWU7PU9](https://drive.google.com/drive/folders/1LtTD1bECyaQrlgJ74z0lVg6x8RlUjWud?usp=sharing)
 ## 2. Preprocessing:
 Transcripts (PDFs) are converted into TXT format and pre-processed by removing spurious data (course metadata). The code '1_preprocess.py' converts and preprocesses the data from folder '1_Data' and stores in '2_Text' folder.
 ## 3. Segmentation:
@@ -22,11 +22,11 @@ B. Wikipedia articles are extarcted for the extracted topics. The code '3_topic_
 
 C. Outlinks for the extracted Wikipedia articles are extracted to generate the concept-graph. The code '3_off_out.py' extracts the backlinks and stores in '4_Out_pkl' folder in Pickle format.
 
-D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '5_Annotated' folder in JSON format. Download '5_Annotated' folder from https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3 .
+D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '5_Annotated' folder in JSON format. Download '5_Annotated' folder from [https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3 ](https://drive.google.com/drive/folders/1Tx_LN1O-cCcLxdW6ulqH6bM4qHrq7Kfd?usp=sharing).
 ## 5. Off-topic Identification:
 The off-topics are identified automatically. The code '4_off_predict.py' identifies the off-topics, stores them in '5_off' folder and also evaluates the concerned modules.
 ## 6. Retrieval of Relevant Video Segments:
-Video lecture segments relevant to each of the off-topics are retrieved. The code '6_retrieval.py' retrieves the segments and stores in '6_Retrieved' folder in JSON format and as 'RT.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format. The '8_Result' folder is downloadable from https://drive.google.com/open?id=17-IxebyTtNsSXY98FfkTJWHK9goHhkOT which contains the folder 'trec-eval', providing the performance evaluation codes.
+Video lecture segments relevant to each of the off-topics are retrieved. The code '6_retrieval.py' retrieves the segments and stores in '6_Retrieved' folder in JSON format and as 'RT.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format. The '8_Result' folder is downloadable from [https://drive.google.com/open?id=17-IxebyTtNsSXY98FfkTJWHK9goHhkOT](https://drive.google.com/drive/folders/1GEU8VBjIEItmsz8N5GcqvaOwzgtXcLyO?usp=sharing) which contains the folder 'trec-eval', providing the performance evaluation codes.
 ## 7. Reranking of Video Segments:
 A. Code '7_feature.py' extracts the features and stores them in 'rerank.txt' file under '7_Reranked' folder.
 
@@ -34,15 +34,15 @@ B. The extracted features are combined with the the labels (relevant or not) fro
 
 C. The retrieved video lecture segments are reranked using code '7_rerank.py' where the learned weights are used. The reranked segments are stored in '7_Reranked' folder in JSON format and as 'RR.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format.
 ## 8. Evaluation:
-A. The retrieved and reranked segmnets are shown to the annotators and their relevance are tagged. The gold standard is present in 'GS.txt' file. The file can be downloaded from https://drive.google.com/open?id=1sKfmBveCkUtaL_5cJqKG0li_z-c0wns4 .
+A. The retrieved and reranked segmnets are shown to the annotators and their relevance are tagged. The gold standard is present in 'GS.txt' file. The file can be downloaded from [https://drive.google.com/open?id=1sKfmBveCkUtaL_5cJqKG0li_z-c0wns4 ](https://drive.google.com/file/d/1fl_sIoJhaC21O13wOzg3q4I_Yw6Gn1sy/view?usp=sharing).
 
-B. The code '8_eval.py' evaluates the retrieval and re-ranking performance. The '8_Result' folder is downloadable from https://drive.google.com/open?id=17-IxebyTtNsSXY98FfkTJWHK9goHhkOT which contains the folder 'trec-eval', providing the performance evaluation codes.
+B. The code '8_eval.py' evaluates the retrieval and re-ranking performance. The '8_Result' folder is downloadable from [https://drive.google.com/open?id=17-IxebyTtNsSXY98FfkTJWHK9goHhkOT](https://drive.google.com/drive/folders/1GEU8VBjIEItmsz8N5GcqvaOwzgtXcLyO?usp=sharing) which contains the folder 'trec-eval', providing the performance evaluation codes.
 
 # Run:
 ## Prepare the pre-requisites:
-A. One needs a ist of supporting files to be present in the current directory. One can download these files (as recipients of 'lib' folder) from https://drive.google.com/open?id=11PJ0Y-3RavS2F0B8lj247M5pK19fK11I
+A. One needs a ist of supporting files to be present in the current directory. One can download these files (as recipients of 'lib' folder) from [https://drive.google.com/open?id=11PJ0Y-3RavS2F0B8lj247M5pK19fK11I](https://drive.google.com/drive/folders/144lSB61RGqfjuuSTMz3ir7spOUrLgRiY?usp=sharing)
 
-B. Geckodriver is also required. Download this from https://drive.google.com/open?id=1Mf92NT_MNV-z2ZXVkkuneIGw7hLoe8n1 and export it in PATH before running the codes.
+B. Geckodriver is also required. Download this from [https://drive.google.com/open?id=1Mf92NT_MNV-z2ZXVkkuneIGw7hLoe8n1](https://drive.google.com/file/d/1Rdkq4OSDVSJG2aekY1_8OVBFs9hF2A3L/view?usp=sharing) and export it in PATH before running the codes.
 
 ## Execute:
 Finally, run 'main.py' which offers a menu-based control to execute each of the above-mentioned modules.
@@ -82,4 +82,15 @@ The module on retrieving questions is discussed in details in our paper 'Using R
     series = {WI '17}
     }
 
+A similar work "Remediating Textbook Deficiencies by Leveraging Community Question Answers" has been deployed for textbook data available at : https://doi.org/10.1007/s10639-022-10937-5.
 
+@article{ghosh2022remediating,
+  title={Remediating textbook deficiencies by leveraging community question answers},
+  author={Ghosh, Krishnendu},
+  journal={Education and Information Technologies},
+  volume={27},
+  number={7},
+  pages={10065--10105},
+  year={2022},
+  publisher={Springer}
+}
